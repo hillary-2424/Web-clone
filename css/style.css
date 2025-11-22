@@ -1,0 +1,475 @@
+ *{
+  padding: 0px;
+  margin: 0px;
+  
+}
+:root{
+  --bg-color:white;
+  --text-color:black;
+}
+body{
+  background-color:var(--bg-color) ;
+  color:var(--text-color);
+  transition: 0.7s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.theme{
+  background-color: black;
+  color: white;
+}
+
+.main-container{
+  width: 100%;
+  margin: auto;
+}
+nav{
+   display: flex; 
+   justify-content: space-around;
+   align-items: center;
+  position:relative ;
+  background-color: white;
+  width: 90%;
+  /* border: solid 2px orangered; */
+}
+
+nav .logo-div{
+  margin-left: -6px;
+    /* border: solid 2px orangered; */
+}
+
+nav .nav-write-up{ 
+  display: flex; 
+  justify-content:space-between;
+     /* border: solid 2px orangered; */
+} 
+
+
+ .nav-write-up .resource{ 
+   display: flex; 
+   justify-content:space-between;
+   font-family: noto sans;
+   font-size: 14px;
+   color:#382e25;
+   font-weight:200;
+   cursor: pointer;
+    /* border: solid 2px orangered */
+  
+} 
+.inner-text{
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 40px;
+  margin-left: 0px;
+  padding: 20px 35px 20px 35px;
+  box-shadow: 1px 3px 5px rgb(215, 213, 213),3px -2px 10px rgb(211, 203, 203) ;
+  display: 3px;
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+.hidden-text{
+  margin-left: 10px;
+}
+
+.hidden-text ul{
+  font-size: 18px;
+  color: #000;
+  font-family: noto sans;
+  list-style: none;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.hidden-text li{
+    font-family: noto sans;
+    list-style: none;
+     height: 40px;
+}
+
+
+.hidden-text a {
+      color: black;
+      text-decoration: none;
+      display: block;
+      font-size: 12px;
+
+    }
+
+
+.resource img{
+  margin-top: 5px;
+  padding-left: 10px;
+  
+}
+.resource img:hover{
+  margin-top: 5px;
+  padding-left: 10px 10px 10px 10px;
+  transform: rotate(180deg);
+  display: inline-block;
+  transition: transform 0.1s ease; 
+  transform-origin: center center;
+  will-change: transform;
+  background-color: #e6e8f0;
+  border-radius: 100%;
+  
+}
+
+nav .nav-write-up p{
+    padding:  0px 30px;
+    color:#64594f;
+    font-family: noto sans;
+    font-size:14px ;
+}
+
+nav .search-field{
+    display: flex;
+    justify-content:space-between;
+    height: 30px; 
+    width: 200px;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    background-color: #f5f6f7;
+}
+
+.search-field input{
+    border: none;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    width: 140px;
+    background-color: #f5f6f7;
+  
+}
+.search-field ::placeholder{
+  font-size: 15px;
+ 
+    font-family: noto sans;
+    border-top-left-radius:20px ;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    border: none;
+
+}
+.search-field .search-icon{
+   padding: 3px 3px 0px 0px;
+   margin-left: 10px;
+   margin-right: -17px;
+    
+    
+}
+.search-field .star-icon{   
+   padding: 2px 0px 0px 0px;
+   margin-right: 10px;
+   
+}
+.search-field p{
+  padding:  3px 8px 4px 8px;
+  background-color:white;
+  font-size: 15px;
+  height: 10px;
+  margin: 5px 7px 0px -10px;
+  font-weight: bolder;
+  color:#646d93;
+  border-radius: 7%;
+  
+}
+
+nav .web{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding:  6px 15px 6px 15px;
+    border: solid 1px #eeeff1;
+    border-radius: 7%;
+  
+}
+nav .web img{
+  margin-left: 12px;
+}
+nav .web p{
+  margin-left: 10px;
+  font-family: noto sans;
+  font-size: 14px;
+  color:#303c4a;
+}
+nav h3{
+    font-family: noto sans;
+    color:#303c4a;
+    font-size: 14px;
+}
+
+
+
+
+/* THE STLE FOR THE SECOND NAV BAR START */
+.nav-2{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  background-color: #f4f7f9;
+  padding-top: 30px;
+  gap: 30px;
+
+}
+.nav-2 h3{
+  font-size: 12px;
+  font-family: noto sans;
+  /* font-weight: 1000px; */
+  color: #131620;
+  margin: 0px 0px 0px 20px;
+  
+}
+
+.nav-2 li{
+  font-size: 14px;
+  font-family: noto sans;
+  font-weight: 600;
+  color: #272728;
+  list-style: none;
+  margin-right: 0px;
+}
+.nav-2 h5{
+  font-size: 14px;
+  font-family: noto sans;
+  font-weight: 600;
+  color: #202124;
+  
+}
+.Hackathon{
+ 
+  width: 100%;
+  height: 40px;
+  background-color:#e8f0fe;
+
+}
+.Hackathon h3{
+  display: flex;;
+  margin-top: 0px;
+  color:#2860b9;
+  font-size: 10px;
+  font-family: noto sans;
+  font-weight:0;
+  margin-left: 20px;
+  padding-top: 15px;
+  
+}
+.Hackathon a{
+color: #2860b9;
+}
+
+.learn-wed-development{
+  display: flex;
+  
+}
+
+.learn-wed{
+  margin-left: 25px;
+  margin-top: 120px;
+
+
+}
+.learn-wed h1{
+  font-size: 40px;
+  font-family: noto sans;
+  display:inline-block;
+  
+}
+.learn-wed h3{
+  font-family:noto sans;
+  line-height: 25px;
+  color:#203449;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.image-1{
+  margin: 100px 0px 0px 0px;
+}
+/* SECOND PAGE BEGINGS HERE */
+.page-2{
+  display: flex;
+  margin-top: 120px;
+}
+.card-1{
+width: 33%; 
+border: solid 2.5px #f5f6f7; 
+margin-left: 25px;
+height: 600px;
+border-radius: 20px;
+}
+
+.card-1 img{
+  margin:70px 0px 0px 25px;
+}
+
+.card-1 p{
+  margin:35px 0px 0px 25px ;
+  padding: 4px 7px;
+  display: inline-block;
+  font-family: noto sans;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bolder;
+
+}
+.card-1 a{
+    text-decoration: none;
+  
+}
+.card-1 h2{
+  margin-left: 25px;
+  padding-top: 10px;
+  font-weight: bolder;
+  font-family: noto sans ,noto sans;
+  font-size: 30px;
+}
+
+.card-1 h3{
+  margin-left: 25px;
+  font-size: 15px;
+  font-family: noto sans;
+  line-height: 20px;
+  padding-top: 30px;
+  color: #151010;
+  font-weight: 400;
+
+}
+.card-1 h4{
+  margin: 60px 0px 20px 100px ;
+  font-family: noto sans;
+  border: solid 2px #1a73e8;
+  display: inline-block;
+  padding: 12px 40px;
+  color: #1a73e8;
+  border-bottom-left-radius:30px ;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-left-radius:30px ; 
+}
+.card-1 h4 a{
+text-decoration: none;
+color: #1a73e8;
+}
+.page-3{
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.page-4{
+  display: flex;
+  margin-top: 20px;
+}
+
+
+.page-5{
+  display:flex ;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+
+
+footer{
+    display: flex;
+   /* border: solid 1px red; */
+    margin-bottom: 50px;
+    border-bottom: solid 1px grey;
+    border-top: solid 1px grey;
+    width: 97%;
+     margin-left: 10px;
+}
+.footer-img{
+  display:inline-block;
+  /* border: solid 1px red; */
+  width: 40%;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+.footer-write-up{
+margin-left: 70px;
+
+}
+
+.footer-write-up ul{
+font-size: 20px;
+font-family: noto sans;
+margin-bottom: 20px;
+
+
+}
+
+.footer-write-up li{
+font-size: 14px;
+font-family: noto sans;
+line-height: 35px;
+list-style-type: none;
+text-decoration: none;
+/* border: solid 1px red; */
+
+}
+.footer-write-up a{
+  text-decoration: none;
+}
+.footer-write-up a:hover{
+font-size: 14px;
+font-family: noto sans;
+line-height: 40px;
+list-style-type: none;
+/* border: solid 1px red; */
+text-decoration: underline;
+color:rgb(41, 41, 235);
+}
+
+
+.terms{
+  display: flex;
+  margin-left:30px ;
+  margin-bottom: 20px;
+  
+}
+.terms .web{
+  display: flex;
+  margin-left: 1000px;
+  
+} 
+.select{
+  background-color: #000;
+  display: inline-block;
+  background-color: rgb(153, 59, 59);
+  position: -webkit-stick y;
+  border: solid 2px rgb(93, 0, 255);
+  
+}
+
+.carrer{
+  width: 13%;
+  height: 30px;
+  padding: 10px 10px 10px 10px;
+  position: fixed;
+  border: solid 2px rgb(93, 0, 255);
+  z-index:999;
+   
+}
+ .option{
+    width: 14.55%;
+    height: 300px;
+    margin-bottom: 80px;
+    z-index: 4444;
+    position:relative ;
+    border: solid 2px red;
+    background-color: white;
+} 
+
+
+
